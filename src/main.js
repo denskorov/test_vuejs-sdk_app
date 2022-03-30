@@ -1,4 +1,12 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import VuejsSdk from '@roman86/vuejs-sdk'
+
+const app = createApp(App)
+
+app.use(VuejsSdk)
+
+app.mount('#app')
+
+
